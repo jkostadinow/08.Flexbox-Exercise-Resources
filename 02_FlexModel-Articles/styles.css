@@ -1,0 +1,27 @@
+/* Основни настройки за шрифтове */
+html {
+    font-family: Helvetica, sans-serif; /* Шрифт за основния текст */
+    line-height: 1.5;                  /* Междуредие за четимост */
+}
+
+h2 {
+    font-family: Georgia, serif;       /* Шрифт за заглавията */
+    line-height: 1.2;                  /* По-плътно междуредие за заглавията */
+}
+
+/* Настройки за секцията */
+section {
+    display: flex;                     /* Flexbox подредба */
+    justify-content: space-between;    /* Равно разстояние между елементите */
+    max-width: 70vw;                   /* Максимална ширина на секцията */
+    margin: 0 auto;                    /* Центриране на секцията в страницата */
+}
+
+/* Настройки за статиите */
+article {
+    flex: 1 1 30%;                     /* Гъвкава ширина на статиите */
+    padding: 2rem;                     /* Вътрешен отстъп */
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Сянка за визия */
+    /*border-radius: 0.5rem;             /* Заоблени ъгли */
+    background-color: #FFF;            /* Бял фон */
+}

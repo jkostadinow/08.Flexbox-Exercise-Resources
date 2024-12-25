@@ -1,0 +1,46 @@
+/* Общи настройки за страницата */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Светъл сив фон за галерията */
+}
+
+/* Галерията като контейнер */
+.gallery {
+    margin: 0 auto;
+    max-width: 80em;
+}
+
+/* Контейнер за изображенията */
+.gallery ul {
+    display: flex;
+    flex-wrap: wrap; /* Позволява прехвърляне на нов ред, ако екрана е малък */
+    gap: 2rem; /* Разстояние между елементите */
+    list-style: none;    
+    justify-content: center;
+}
+
+/* Индивидуални изображения */
+.gallery li {
+    flex: 1 1 calc(33.33% - 2rem); /* Ширина от 1/3, с отчитане на разстоянията (gap) */
+    max-width: 300px; /* Максимална ширина за изображенията */
+    background-color: white; /* Бял фон зад всяко изображение */
+    border: 5px solid black; /* Черен бордюр */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Лека сянка под рамката */
+    padding: 1rem; /* Отстояние вътре в рамката */
+    text-align: center; /* Центриране на съдържанието */
+    display: flex; /* Flexbox за центриране на изображението вътре */
+    justify-content: center; /* Хоризонтално центриране */
+    align-items: center; /* Вертикално центриране */
+}
+
+/* Стилизиране на изображенията */
+.gallery img {
+    display: block;
+    max-width: 100%; /* Изображенията никога няма да надхвърлят рамката */
+    max-height: 100%; /* Изображенията никога няма да се разтягат вертикално */
+    height: auto; /* Пропорционална височина */
+    margin: 0 auto; /* Центриране на изображенията */
+    object-fit: contain; /* Гарантира, че изображението се вмества без да се изкривява */
+}

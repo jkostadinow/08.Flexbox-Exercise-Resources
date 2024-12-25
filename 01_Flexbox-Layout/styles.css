@@ -1,0 +1,49 @@
+body {
+    background-color: #EEE; /* Цвят на фона */
+    padding: 5rem;          /* Пространство около съдържанието */
+    display: flex;          /* Flexbox за подредба */
+    flex-wrap: wrap;        /* Пренасяне на елементи на нов ред */
+    gap: 2rem;              /* Разстояние между елементите */
+    justify-content: center; /* Центриране на елементите хоризонтално */
+    align-items: flex-start; /* Подравняване на елементите отгоре */
+}
+
+header, footer, main, aside {
+    padding: 0rem 1rem 1rem 1rem;          /* Вътрешен отстъп за съдържанието */
+    background-color: #FFF; /* Бял фон */
+    border-radius: 0.4rem;  /* Закръглени ъгли */
+    color: #000;            /* Черен текст */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Лека сянка */
+    position: relative;     /* Позволява точно позициониране на текст */
+    text-align: left;       /* Подравняване на текста вляво */
+    
+}
+
+/* Специфични стилове за header и footer */
+header, footer {
+    flex-basis: 100%;       /* Цяла ширина за header и footer */
+    min-height: 4rem;       /* Минимална височина */
+}
+
+/* Стилове за основната секция */
+main {
+    flex: 8 1 40rem;        /* По-голяма гъвкавост за главния контейнер */
+    min-height: 20rem;      /* Минимална височина */
+}
+
+/* Стилове за страничната секция */
+aside {
+    flex: 2 1 20rem;        /* По-малка гъвкавост за страничната секция */
+    min-height: 20rem;      /* Минимална височина */
+}
+
+/* Центриране на текста в горния ляв ъгъл */
+header, footer, main, aside {
+    display: flex;          /* Flexbox за подредба на съдържанието */
+    justify-content: flex-start; /* Подравняване вляво */
+    align-items: flex-start;     /* Подравняване горе */
+}
+
+header{
+    min-height: 8rem;
+}
